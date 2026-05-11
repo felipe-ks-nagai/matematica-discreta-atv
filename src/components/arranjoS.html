@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <div class="container-calculadora">
-        <h3 class="titulo">Arranjo Simples</h3>
-        <p>O arranjo simples é o número de maneiras de selecionar um subconjunto de objetos de um conjunto maior, onde a ordem importa. A fórmula para calcular o arranjo simples de n objetos tomados p a p é dada por:</p>
-        <br>
-        <p><strong>A(n, p) = n! / (n - p)!)</strong></p>
-        <br>
-        <input type="text" id="arranjos-simples-formula" value="Resultado: " readonly class="input">
-        <input type="number" id="arranjos-simples-input-n" placeholder="Digite o valor de n" class="input">
-        <input type="number" id="arranjos-simples-input-p" placeholder="Digite o valor de p" class="input">
-        <button onclick="calcularArranjoSimples()" class="button button-calculadora">Calcular</button>
-        <a href="index.html" class="button button-saida">Voltar</a>
+    <div id="arranjo">
+        <div class="container-calculadora">
+            <h3 class="titulo">Arranjo Simples</h3>
+            <p>O arranjo simples é o número de maneiras de selecionar um subconjunto de objetos de um conjunto maior, onde a ordem importa. A fórmula para calcular o arranjo simples de n objetos tomados p a p é dada por:</p>
+            <br>
+            <p><strong>A(n, p) = n! / (n - p)!)</strong></p>
+            <br>
+            <strong>
+                <p id="arranjo-simples-explicacao"></p>
+            </strong>
+            <input type="text" id="arranjos-simples-formula" value="Resultado: " readonly class="input">
+            <input type="number" id="arranjos-simples-input-n" placeholder="Digite o valor de n" class="input">
+            <input type="number" id="arranjos-simples-input-p" placeholder="Digite o valor de p" class="input">
+            <button onclick="calcularArranjoSimples()" class="button button-calculadora">Calcular</button>
+            <button onclick="limpar(document.getElementById('arranjo'), document.getElementById('arranjo-simples-explicacao')) " class="button button-clear">C</button>
+            <a href="index.html" class="button button-saida">Voltar</a>
+        </div>
     </div>
 </body>
 </html>

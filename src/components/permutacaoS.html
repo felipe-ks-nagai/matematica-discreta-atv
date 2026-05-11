@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <div class="container-calculadora">
-        <h3 class="titulo">Permutação Simples</h3>
-        <p>A permutação simples é o número de maneiras de organizar um conjunto de objetos distintos. A fórmula para calcular a permutação simples de n objetos é dada por:</p>
-        <br>
-        <p><strong>P(n) = n!</strong></p>
-        <br>
-        <input type="text" id="permutacao-simples-formula" value="Resultado: " readonly class="input">
-        <input type="number" id="permutacao-simples-input" placeholder="Digite o valor de n" class="input">
-        <button onclick="calcularPermutacaoSimples()" class="button button-calculadora">Calcular</button>
-        <a href="index.html" class="button button-saida">Voltar</a>
+    <div id="permutacao-simples">
+        <div class="container-calculadora">
+            <h3 class="titulo">Permutação Simples</h3>
+            <p>A permutação simples é o número de maneiras de organizar um conjunto de objetos distintos. A fórmula para calcular a permutação simples de n objetos é dada por:</p>
+            <br>
+            <p><strong>P(n) = n!</strong></p>
+            <br>
+            <strong>
+                <p id="permutacao-simples-explicacao"></p>
+            </strong>
+            <input type="text" id="permutacao-simples-formula" value="Resultado: " readonly class="input">
+            <input type="number" id="permutacao-simples-input" placeholder="Digite o valor de n" class="input">
+            <button onclick="calcularPermutacaoSimples()" class="button button-calculadora">Calcular</button>
+            <button onclick="limpar(document.getElementById('permutacao-simples'), document.getElementById('permutacao-simples-explicacao'))" class="button button-clear">C</button>
+            <a href="index.html" class="button button-saida">Voltar</a>
+        </div>
     </div>
 </body>
 </html>

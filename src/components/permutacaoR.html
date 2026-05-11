@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <div class="container-calculadora">
-        <h3 class="titulo">Permutação com Repetição</h3>
-        <p>A permutação com repetição é o número de maneiras de organizar um conjunto de objetos onde alguns podem se repetir. A fórmula para calcular a permutação com repetição de n objetos é dada por:</p>
-        <br>
-        <p><strong>P(n, n₁, n₂, ..., nₖ) = n! / (n₁! × n₂! × ... × nₖ!)</strong></p>
-        <br>
-        <input type="text" id="permutacao-repeticao-formula" value="Resultado: " readonly class="input">
-        <input type="number" id="permutacao-repeticao-input" placeholder="Digite o valor de n" class="input">
-        <input type="number" id="permutacao-repeticao-repeticoes-input"  placeholder="Ex: 2,3,4" title="Digite as repetições separadas por vírgula. Exemplo: 2,3,4" class="input">
-        <button onclick="calcularPermutacaoRepeticao()" class="button button-calculadora">Calcular</button>
-        <a href="index.html" class="button button-saida">Voltar</a>
+    <div id="permutacao-repeticao">
+        <div class="container-calculadora">
+            <h3 class="titulo">Permutação com Repetição</h3>
+            <p>A permutação com repetição é o número de maneiras de organizar um conjunto de objetos onde alguns podem se repetir. A fórmula para calcular a permutação com repetição de n objetos é dada por:</p>
+            <br>
+            <p><strong>P(n, n₁, n₂, ..., nₖ) = n! / (n₁! × n₂! × ... × nₖ!)</strong></p>
+            <br>
+            <strong>
+                <p id="permutacao-repeticao-explicacao"></p>
+            </strong>
+            <input type="text" id="permutacao-repeticao-formula" value="Resultado: " readonly class="input">
+            <input type="number" id="permutacao-repeticao-input" placeholder="Digite o valor de n" class="input">
+            <input type="number" id="permutacao-repeticao-repeticoes-input"  placeholder="Ex: 2,3,4" title="Digite as repetições separadas por vírgula. Exemplo: 2,3,4" class="input">
+            <button onclick="calcularPermutacaoRepeticao()" class="button button-calculadora">Calcular</button>
+            <button onclick="limpar(document.getElementById('permutacao-repeticao'), document.getElementById('permutacao-repeticao-explicacao'))" class="button button-clear">C</button>
+            <a href="index.html" class="button button-saida">Voltar</a>
+        </div>
     </div>
 </body>
 </html>

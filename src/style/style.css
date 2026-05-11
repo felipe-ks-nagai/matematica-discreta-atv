@@ -64,8 +64,13 @@ p{
   background: linear-gradient(135deg,#667eea 0%,#764ba2 100%);
 }
 
-.button-saida{
+.button-clear{
   background: linear-gradient(135deg,#ff6a00 0%,#ee0979 100%);
+  border: 2px solid rgba(0,0,0,0.35);
+}
+
+.button-saida{
+  background: linear-gradient(135deg,#3a3a3a 0%,#d3d3d3 100%);
   border: 2px solid rgba(0,0,0,0.35);
 }
 
