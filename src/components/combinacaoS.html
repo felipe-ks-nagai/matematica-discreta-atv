@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinação Simples</title>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="container-calculadora">
+        <h3 class="titulo">Combinação Simples</h3>
+        <p>A combinação simples é o número de maneiras de selecionar um subconjunto de objetos de um conjunto maior, onde a ordem não importa. A fórmula para calcular a combinação simples de n objetos tomados p a p é dada por:</p>
+        <br>
+        <p><strong>C(n, p) = n! / (p! * (n - p)!)</strong></p>
+        <br>
+        <input type="text" id="combinacao-simples-formula" value="Resultado: " readonly class="input">
+        <input type="number" id="combinacao-simples-input-n" placeholder="Digite o valor de n" class="input">
+        <input type="number" id="combinacao-simples-input-p" placeholder="Digite o valor de p" class="input">
+        <button onclick="calcularCombinacaoSimples()" class="button button-calculadora">Calcular</button>
+        <a href="index.html" class="button button-saida">Voltar</a>
+    </div>
+</body>
+</html>
