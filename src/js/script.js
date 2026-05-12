@@ -13,7 +13,7 @@ calcularPermutacaoRepeticao = () => {
     let y = 1;
     let kArray = [];
     const n = parseInt(document.getElementById('permutacao-repeticao-input').value)
-    const k = parseInt(document.getElementById('permutacao-repeticao-repeticoes-input').value)
+    const k = document.getElementById('permutacao-repeticao-repeticoes-input').value
     const resultado = document.getElementById('permutacao-repeticao-formula')
     const explicacao = document.getElementById('permutacao-repeticao-explicacao')
     kArray = k.toString().split(',')
